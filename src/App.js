@@ -1,9 +1,18 @@
-function App() {
-  return (
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const App = ({message}) => {
+  return(
     <div className="App">
-      <h1>Let's create a game with React, Redux and SVG!</h1>
+      <h1>{message}</h1>
     </div>
-  );
+  )
 }
+
+App.propTypes = {
+  message: PropTypes.string.isRequired
+}
+
+
 
 export default App;
