@@ -1,17 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import './index.css';
 import Game from './containers/Game/Game';
 import reducer from './reducers';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-
-const store = configureStore(
+const store = configureStore({
   reducer,
-  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,5 +19,4 @@ root.render(
   </Provider>
 );
 
-
-registerServiceWorker();
+serviceWorkerRegistration.register();
