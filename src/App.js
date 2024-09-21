@@ -1,11 +1,10 @@
 import React from 'react';
+import Canvas from './components/canvas';
 import PropTypes from 'prop-types';
 
 const App = ({message}) => {
   return(
-    <div className="App">
-      <h1>{message}</h1>
-    </div>
+   <Canvas />
   )
 }
 
