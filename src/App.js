@@ -5,6 +5,7 @@ import { getCanvasPosition } from './utils/formulas';
 
 
 
+
 const App = ({angle, moveObjects}) => {
   const canvasMousePosition = useRef({});
 
@@ -23,7 +24,7 @@ const App = ({angle, moveObjects}) => {
   return(
    <Canvas
     angle={angle}
-    trackMouse={ trackMouse}
+    trackMouse={trackMouse}
    />
   )
 }
