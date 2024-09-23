@@ -1,21 +1,20 @@
-import { connect } from 'react-redux';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import App from '../../App';
-import { moveObjects } from '../../actions/index';
+import { moveObjects } from '../../features/gameSlice';
 
-const mapStateToProps = (state) => ({
-  angle: state.angle,
-});
+const Game = () => {
+  const angle = useSelector(state => state.game.angle);
+  const dispatch = useDispatch();
 
-const mapDispatchToProps = (dispatch) => ({
-  moveObjects: (mousePosition) => {
+  const handleMoveObjects = (mousePosition) => {
     dispatch(moveObjects(mousePosition));
-  },
-});
+  };
 
-const Game = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(App);
+  return (
+    <App angle={angle} moveObjects={handleMoveObjects} />
+  );
+};
 
 
 export default Game;
