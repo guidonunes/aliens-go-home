@@ -15,6 +15,7 @@ const Canvas = (props) => {
       id="aliens-go-home-canvas"
       preserveAspectRatio="xMaxYMax none"
       onMouseMove={props.trackMouse}
+      onTouchMove={props.trackMouse}
       viewBox={viewBox}
     >
       <Sky />
