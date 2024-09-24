@@ -19,9 +19,9 @@ const Canvas = (props) => {
     >
       <Sky />
       <Ground />
-      <CannonBall position={{ x: 0, y: -100 }} />
       <CannonPipe rotation={props.angle} />
       <CannonBase />
+      <CannonBall position={{ x: 0, y: -100 }} />
 
     </svg>
   );
