@@ -25,6 +25,8 @@ const App = ({angle, moveObjects}) => {
    <Canvas
     angle={angle}
     trackMouse={trackMouse}
+    onMouseMove={trackMouse}
+    onTouchMove={trackMouse}
    />
   )
 }
