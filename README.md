@@ -19,3 +19,7 @@ Aliens Go Home! is an exciting game where players use a cannon to defend Earth f
 
 * Responsive Design: Fully optimized for touch screens and smartphones, ensuring a smooth and accessible gaming experience on mobile devices.
 * Modern React & Redux: The code has been refactored to incorporate the latest practices in React and Redux.
+
+## Tutorial
+
+This project is based on a series of tutorials that guide you through creating the **Aliens Go Home!** game. You can find the full tutorial [here](https://auth0.com/blog/developing-games-with-react-redux-and-svg-part-2/#The-React-Game--Aliens--Go-Home).
